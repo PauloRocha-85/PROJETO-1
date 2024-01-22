@@ -21,11 +21,7 @@
 
     <header id="header">
         <div class="interface">
-            <div class="logo">
-                <a href="https://github.com/PauloRocha-85" target="_blank">
-                    <img src="img/avatar.svg" alt="logo PR">
-                </a>
-                </div><!--logo-->
+            
                 <nav class="menu-desktop">
                     <ul>
                         <li><a href="#topo-do-site">Inico</a></li>
@@ -34,11 +30,7 @@
                         <li><a href="#projetos">Projetos</a></li>
                     </ul>
                 </nav>
-                <div class="btn-contato">
-                    <a href="https://wa.me/5585992779686?text=Ola%2C+peguei+seu+contato+no+site+de+portfolio.+Poderia+me+ajudar%3F" target="_blank">
-                        <button>Contato</button>
-                    </a>
-                </div><!--btn-contato-->
+               
 
                 <div class="btn-abrir-menu" id="btn-menu">
                     <i class="bi bi-list"></i>
@@ -71,14 +63,14 @@
                         <br/>
                         <br/>
                         <br/>
-                        <h1>TRANSFORMANDO IDEIAS EM REALIDADE DIGITAL <span>.</span></h1>
+                        <h1>Olá, sou <span>Paulo</span> Rocha</h1>
                         <P>Criatividade e inovação andam lado a lado.</P>
                         <P>Interesse em desenvolvimento front-end e back-end.</P>
                         <P>Buscando uma oprtunidade para atuar como desenvolvedor.</P>
                         
                         <div class="btn-contato">
-                            <a href="https://wa.me/5585992779686?text=Ola%2C+peguei+seu+contato+no+site+de+portfolio.+Poderia+me+ajudar%3F" target="_blank">
-                                <button>Entre em contato</button>
+                            <a href="https://acrobat.adobe.com/id/urn:aaid:sc:VA6C2:5dd6675e-60fe-4091-86b8-1bf4f0b76c8b" target="_blank">
+                                <button>Baixar CV</button>
                             </a>
                         </div>
                         <br/>
@@ -87,7 +79,7 @@
                     </div><!--txt-topo-site-->
 
                     <div class="img-topo-site">
-                        <img src="img/pessoa.jpeg" alt="">
+                        <img src="img/jp.png" alt="">
                     </div><!--img-topo-site-->
                 </div>
             </div><!--interface-->
@@ -121,14 +113,11 @@
         <section id="sobre" class="sobre">
             <div class="interface">
                 <div class="flex">
-                    <div class="img-sobre">
-                        <img src="./img/foto.png">
-                    </div><!--img-sobre-->
-
                         <div class="txt-sobre">
                         <h2>MUITO PRAZER, <span> SOU PAULO ROCHA.</span></h2>
                         <p>38 anos, formado em Administração de empresas pela Faculdade Terra Nordeste CE. Iniciando uma formação de Desenvolvimento Full Stack com especialização em Front-End na Danki Code.</p>
                         <p>Estudos atualmente voltados a obter conhecimentos sólidos em JavaScript para futuramente desenvolver no framework React.js. Interesse por UX/UI, gosto criar protótipos e transformar ideias em código. Em busca de atuar como desenvolvedor front-end.</p>
+                        <br>
                         <div class="btn-social">
                             <a href="https://www.instagram.com/paulorochacsc/" target="_blank"><button><i class="bi bi-instagram"></i></button></a>
                             <a href="https://github.com/PauloRocha-85" target="_blank"><button><i class="bi bi-github"></i></button></a>
@@ -142,28 +131,33 @@
         <section id="projetos" class="portfolio">
             <div class="interface">
                 <h2 class="titulo">MEU<span>PORTFOLIO.</span></h2>
-                <div class="flex">
-                    <a href="https://paulorocha-85.github.io/jogomariojump/" target="_blank">
-                        <div class="img-port" style="background-image: url(img/mario.jpg);">
-                            <div class="overlay">MarioJump</div>
-                        </div>
-                    </a>
-                    <a href="https://paulorocha-85.github.io/Bateria-virtual/" target="_blank">
-                        <div class="img-port" style="background-image: url(img/bateria.png);">
-                            <div class="overlay">Bateria</div>
-                        </div> 
-                    </a>
-                    <a href="https://paulorocha-85.github.io/Site-do-Mario/" target="_blank">
-                        <div class="img-port" style="background-image: url(img/filmemario.jpg);">
-                            <div class="overlay">Site Mario</div>
-                        </div>  
-                    </a>
-                    <a href="https://github.com/PauloRocha-85?tab=repositories" target="_blank">
-                        <div class="img-port" style="background-image: url(img/github.jpg);">
-                            <div class="overlay">+Projeto</div>
-                        </div>  
-                    </a>
-                </div><!--flex-->
+                <div class="container">
+                    <input type="radio" name="slider" id="item-1" checked>
+                    <input type="radio" name="slider" id="item-2">
+                    <input type="radio" name="slider" id="item-3">
+                    <div class="cards">
+                        <label class="card" for="item-1" id="song-1">
+                            <img src="img/filmemario0.jpg" alt="" >
+                            <button>
+                                <a href="https://paulorocha-85.github.io/Site-do-Mario/" target="_blank">Abrir</a>
+                            </button>
+                        </label>
+        
+                        <label class="card" for="item-2" id="song-2">
+                            <img src="img/login.png" alt="">
+                            <button>
+                                <a href="https://paulorocha-85.github.io/Formulario-de-inscri-o/" target="_blank">Abrir</a>
+                            </button>
+                        </label>
+        
+                        <label class="card" for="item-3" id="song-3">
+                            <img src="img/tela dark night.png" alt="">
+                            <button>
+                                <a href="https://paulorocha-85.github.io/Login-Dark-Light/" target="_blank">Abrir</a>
+                            </button>
+                        </label>
+                    </div>
+                </div>
             </div><!--interface-->
         </section><!--portfolio-->
     </main>
@@ -172,7 +166,9 @@
         <div class="interface">
             <div class="line-footer">
                 <div class="flex">
-                    <p><i class="bi bi-envelope-fill"></i> <a href="mailto:paulorochacsc@gmail.com">paulorochacsc@gmail.com</a></p>
+                    <p><i class="bi bi-envelope-fill"></i> <a href="mailto:paulorochacsc@gmail.com" target="_blank">paulorochacsc@gmail.com</a></p>
+                    <p><i class="bi bi-envelope-fill"></i> <a href="https://wa.me/5585992779686?text=Ola%2C+peguei+seu+contato+no+site+de+portfolio.+Poderia+me+ajudar%3F" target="_blank">+55 85 99277-9686</a></p>
+                    <p><i class="bi bi-envelope-fill"></i> <a href="https://www.google.com/maps/place/Rua+Jurupar%C3%AD,+1351+-+Potira+I,+Caucaia+-+CE,+61650-010/@-3.7553538,-38.6236274,17z/data=!3m1!4b1!4m6!3m5!1s0x7c74bd84a9859e5:0x256e2bf7a2ec04da!8m2!3d-3.7553538!4d-38.6236274!16s%2Fg%2F11fw8_g6_l?entry=ttu" target="_blank">Rua Juruparí, 1351 - Potira ICaucaia - CE, 61650-010</a></p>
                 <div class="btn-social">
                     <a href="https://www.instagram.com/paulorochacsc/" target="_blank"><button><i class="bi bi-instagram"></i></button></a>
                     <a href="https://github.com/PauloRocha-85" target="_blank"><button><i class="bi bi-github"></i></button></a>

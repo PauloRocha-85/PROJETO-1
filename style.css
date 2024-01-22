@@ -7,12 +7,12 @@
 }
 
 body {
-    background-color: black;
+    background-color: #1e1f2b;
     height: 100vh;
 }
 
 .interface {
-    max-width: 1200px;
+    max-width: 1280px;
     margin: 0 auto;
 }
 
@@ -47,22 +47,17 @@ button:hover, form .btn-enviar input:hover {
 
 /* estilo do cabeçario */
 
-header {
-    background-color: #242424;
-    padding: 40px 4%;
-}
 
-header.rolagem{
-    background-color: #242424;
-    padding: 20px 4%;
-}
 
 header > .interface {
-    display: flex;
     width: 100%;
-    height: 10px;
+    height: 60px;
+    background: rgba(0,0,0,0.5);
+    display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
+    position: fixed;
+    z-index: 99;
 }
 
 header a {
@@ -153,6 +148,7 @@ header nav ul {
 
 section-topo-do-site {
     padding: 40px 4%;
+    margin: 40px;
 }
 
 section.topo-do-site.flex {
@@ -179,8 +175,7 @@ section.topo-do-site.flex {
 .topo-do-site .img-topo-site img {
     position: relative;
     animation: flutuar 2s ease-in-out infinite alternate;
-    width: 427px;
-    height: 465px;
+    height: 500px;
 }
 
 @keyframes flutuar {
@@ -268,51 +263,90 @@ section.sobre .flex {
 }
 
 /* ESTILO DO PORTFOLIO */
-section.portfolio {
-    padding: 80px 4%;
-    box-shadow: 0 0 40px 10px #ffffff1d;
-}
-
-section.portfolio .flex {
-    justify-content: space-around;
-    margin-top: 60px;
-}
-
-.img-port {
-    width: 18rem;
-    height: 460px;
+#projetos .container{
+    width: 100%;
+    height: 100vh;
     background-size: cover;
-    background-position: 100% 0%;
-    transition: 8s;
-    cursor: pointer;
-    border-radius: 40px;
-    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
-
-.img-port:hover {
-    background-position: 100% 100%;
+#projetos .container input[type=radio]{
+    display: none;
 }
-
-.overlay {
-    position: relative;
-    top: 0;
+#projetos .container .card{
+    position: absolute;
+    width: 40%;
+    height: 80%;
     left: 0;
+    right: 0;
+    margin: 150px auto;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    box-shadow: 0 0 10px 0 rgba(21,111,195,0.5);
+    transition: 0.4s ease;
+    cursor: pointer;
+}
+#projetos .container .card img{
     width: 100%;
     height: 100%;
-    background-color: #000000b8;
-    border-radius: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 24px;
-    font-weight: 600;
-    color: #fff;
-    opacity: 0;
-    transition: .5s;
+    object-fit: cover;
+    border-radius: 10px;
 }
-
-.overlay:hover {
+#projetos .container .card h1{
+    position: absolute;
+    z-index: 9;
+    color: #fff;
+    font-size: 6rem;
+    margin-top: 60px;
+}
+#projetos .container .card p{
+    position: absolute;
+    z-index: 9;
+    width: 400px;
+    color: #fff;
+    margin-top: 200px;
+    text-align: justify;
+}
+#projetos .container .card button{
+    position: absolute;
+    z-index: 9;
+    margin-top: 400px;
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: none;
+    color: #fff;
+    background: rgba(21,111,195,0.5);
+    text-transform: uppercase;
+    cursor: pointer;
+}
+#projetos .container .cards{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+#item-1:checked ~ .cards #song-3,
+#item-2:checked ~ .cards #song-1,
+#item-3:checked ~ .cards #song-2{
+    transform: translateX(-40%) scale(0.8);
+    opacity: 0.4;
+    z-index: 0;
+}
+#item-1:checked ~ .cards #song-2,
+#item-2:checked ~ .cards #song-3,
+#item-3:checked ~ .cards #song-1{
+    transform: translateX(40%) scale(0.8);
+    opacity: 0.4;
+    z-index: 0;
+}
+#item-1:checked ~ .cards #song-1,
+#item-2:checked ~ .cards #song-2,
+#item-3:checked ~ .cards #song-3{
+    transform: translateX(0) scale(1);
     opacity: 1;
+    z-index: 1;
 }
 
 /* ESTILO DO RODAPE */
